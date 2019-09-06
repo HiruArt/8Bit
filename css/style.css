@@ -1,4 +1,242 @@
+@import "../font/Montserrat-Black/styles.css";
+@import "../font/Montserrat-Bold/styles.css";
+@import "../font/Montserrat-ExtraBold/styles.css";
+@import "../font/Montserrat-Medium/styles.css";
+@import "../font/Montserrat-Regular/styles.css";
+@import "../font/TTNorms-Black/styles.css";
+@import "../font/TTNorms-Bold/styles.css";
+
 
 a {
     text-decoration: none;
 }
+
+body {
+    font-family: Montserrat-Regular, sans-serif;
+    background: url("../img/bg-line.jpg") center;
+}
+h1 {
+    margin: 0;
+}
+
+.big-title {
+    color: white;
+    font-family: TTNorms-Bold;
+    line-height: 76px;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.desc {
+    color: white;
+    line-height: 36px;
+    font-size: 30px;
+}
+
+header {
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__inner {
+    max-width: 1700px;
+    width: 100%;
+    position: relative;
+}
+.header__logo-wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.header__logo-light-wrap {
+    position: absolute;
+    top: -740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.header__logo-light{
+    width: 100%;
+    animation: rotating-light 60s linear infinite;
+}
+
+@-webkit-keyframes rotating-light {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating-light {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.header__logo-roulette-wrap {
+    position: absolute;
+    top: -165px;
+    box-shadow: 0px 0px 113px 52px rgba(255,205,4,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo-roulette{
+    width: 100%;
+    animation: rotating-roulette 30s linear infinite;
+}
+
+@-webkit-keyframes rotating-roulette {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotating-roulette {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.header__logo-item {
+    position: relative;
+    z-index: 2;
+}
+.header__lang {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    margin-top: 58px;
+}
+.header__lang-link {
+    color: white;
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.page-wrap {
+    max-width: 1700px;
+    width: 100%;
+}
+.game {
+
+}
+.game__inner {
+
+}
+.game__top-txt {
+
+}
+.game__title {
+
+}
+.game__desc {
+
+}
+.game__list {
+    display: flex;
+    justify-content: space-between;
+}
+.game__item {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    background: #cf5300;
+    border: 1px solid white;
+    border-radius: 70px;
+    padding: 50px 20px 100px 20px;
+}
+.game__item-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 45px;
+}
+.game__item-multiply {
+    color: #eebe9a;
+    font-size: 80px;
+    font-family: TTNorms-Black;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.game__item-profit {
+    color: white;
+    font-family: TTNorms-Black;
+    font-size: 42px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -20px;
+    right: 32px;
+}
+.game__item-center {
+    border-top: 1px solid #fac055;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    position: relative;
+}
+.game__item-bet {
+    font-size: 48px;
+    font-family: Montserrat-Black;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.game__item-bet span {
+    font-size: 48px;
+    color: white;
+    font-family: Montserrat-Regular;
+}
+.game__item-img {
+    max-width: 380px;
+    position: absolute;
+    bottom: 0;
+}
+.game__item-img  img{
+    width: 100%;
+}
+.game__item-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game__item-win {
+    color: #faff4b;
+    font-family: Montserrat-Black;
+    font-size: 88px;
+    position: relative;
+}
+.game__item-win span{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.game__item-caption {
+    color: white;
+    font-size: 24px;
+}
+.game__item-btn {
+
+}
+

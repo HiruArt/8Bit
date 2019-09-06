@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'TTNorms-Black';
+  src: url('TTNorms-Black.eot?#iefix') format('embedded-opentype'),  url('TTNorms-Black.otf')  format('opentype'),
+	     url('TTNorms-Black.woff') format('woff'), url('TTNorms-Black.ttf')  format('truetype'), url('TTNorms-Black.svg#TTNorms-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

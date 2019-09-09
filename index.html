@@ -17,7 +17,6 @@
                 <div class="header__inner">
                     <div class="header__logo-wrap">
                         <div class="header__logo-light-wrap">
-                            <!--<div class="header__logo-light"></div>-->
                             <img src="img/light.png" alt="img" class="header__logo-light">
                         </div>
                         <div class="header__logo-roulette-wrap">
@@ -28,11 +27,33 @@
                         </div>
                     </div>
                     <div class="header__lang">
-                        <a href="javascript:void(0);" class="header__lang-link">
+                        <a href="javascript:void(0);" class="header__lang-link header__lang-link--active">
                             <img src="img/ru-flag.png" alt="ru">
                             RU
                         </a>
+                        <div class="header__lang-popup">
+                            <a href="javascript:void(0);" class="header__lang-link header__lang-popup-link">
+                                <img src="img/ru-flag.png" alt="ru">
+                                RU
+                            </a>
+                            <a href="javascript:void(0);" class="header__lang-link header__lang-popup-link">
+                                <img src="img/ru-flag.png" alt="ru">
+                                RU
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="scene" id="coin1">
+                <div data-depth="0.5">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="img/coin/coin01.png" alt="img" class="b-lazy">
+                </div>
+            </div>
+            <div class="scene" id="coin2">
+                <div data-depth="1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="img/coin/coin02.png" alt="img" class="b-lazy">
                 </div>
             </div>
         </header>
@@ -42,6 +63,7 @@
                     <div class="game p-lr">
                         <div class="game__inner">
                             <div class="game__top-txt">
+                                <div class="game__bg-title bg-title">A Telegram</div>
                                 <h1 class="game__title big-title">
                                     A Telegram-based mini game
                                 </h1>
@@ -67,7 +89,8 @@
                                             <span>DOGE</span>
                                         </div>
                                         <div class="game__item-img">
-                                            <img src="img/game-item01.png" alt="img">
+                                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/game-item01.png" alt="img">
                                         </div>
                                     </div>
                                     <div class="game__item-bottom">
@@ -101,7 +124,8 @@
                                             <span>DOGE</span>
                                         </div>
                                         <div class="game__item-img">
-                                            <img src="img/game-item02.png" alt="img">
+                                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/game-item02.png" alt="img">
                                         </div>
                                     </div>
                                     <div class="game__item-bottom">
@@ -134,7 +158,8 @@
                                             <span>DOGE</span>
                                         </div>
                                         <div class="game__item-img">
-                                            <img src="img/game-item03.png" alt="img">
+                                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/game-item03.png" alt="img">
                                         </div>
                                     </div>
                                     <div class="game__item-bottom">
@@ -154,14 +179,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="scene" id="coin3">
+                            <div data-depth="0.7">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="img/coin/coin03.png" alt="img" >
+                            </div>
+                        </div>
                     </div>
                     <div class="access p-lr">
                         <div class="access__inner">
+                            <div class="access__bg-title bg-title">How to acce</div>
                             <div class="access__left">
                                 <div class="access__title big-title">
-                                    How to access LUCKY 33
-                                    <br>
-                                    mini game?
+                                    How to access LUCKY 33 mini game?
                                 </div>
                                 <div class="access__desc desc">
                                     1. Add to your telegram our bot @PSEofficialBOT and click
@@ -180,16 +210,39 @@
                             </div>
                             <div class="access__right">
                                 <div class="access__img">
-                                    <img src="img/image1.png" alt="img">
+                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/image1.png" alt="img">
+                                </div>
+                                <div class="scene" id="coin4">
+                                    <div data-depth="1.1">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                             data-src="img/coin/coin04.png" alt="img" >
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="last-winners p-lr">
                         <div class="last-winners__inner">
+                            <div class="last-winners__bg-title bg-title">Last winners:</div>
                             <div class="last-winners__left">
                                 <div class="last-winners__img">
-                                    <img src="img/image2.png" alt="img">
+                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/image2.png" alt="img">
+                                </div>
+
+                                <div class="scene" id="coin5">
+                                    <div data-depth="1.5">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                             data-src="img/coin/coin05.png" alt="img" >
+                                    </div>
+                                </div>
+
+                                <div class="scene" id="coin6">
+                                    <div data-depth="0.3">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                             data-src="img/coin/coin06.png" alt="img" >
+                                    </div>
                                 </div>
                             </div>
                             <div class="last-winners__right">
@@ -199,6 +252,22 @@
                                 <div class="last-winners__desc desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                                 </div>
+
+
+                                <div class="scene" id="coin8">
+                                    <div data-depth="0.5">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                             data-src="img/coin/coin07.png" alt="img" >
+                                    </div>
+                                </div>
+
+                                <div class="scene" id="coin7">
+                                    <div data-depth="0.7">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                             data-src="img/coin/coin08.png" alt="img" >
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -465,6 +534,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        <img src="img/gold-icon.png" alt="img">
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/1.png" alt="user">
                                                     </div>
@@ -484,6 +556,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        <img src="img/silver-icon.png" alt="img">
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/2.png" alt="user">
                                                     </div>
@@ -503,6 +578,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        <img src="img/bronze-icon.png" alt="img">
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/3.png" alt="user">
                                                     </div>
@@ -522,6 +600,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        4
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/4.png" alt="user">
                                                     </div>
@@ -541,6 +622,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        5
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/5.png" alt="user">
                                                     </div>
@@ -560,6 +644,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        6
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/6.png" alt="user">
                                                     </div>
@@ -579,6 +666,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        7
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/7.png" alt="user">
                                                     </div>
@@ -598,6 +688,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        8
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/8.png" alt="user">
                                                     </div>
@@ -617,6 +710,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        9
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/9.png" alt="user">
                                                     </div>
@@ -636,6 +732,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        10
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/10.png" alt="user">
                                                     </div>
@@ -655,6 +754,9 @@
                                             </div>
                                             <div class="top-table__bottom-item-content">
                                                 <div class="top-table__username">
+                                                    <div class="top-table__username-number">
+                                                        11
+                                                    </div>
                                                     <div class="top-table__username-img">
                                                         <img src="img/avatars/11.png" alt="user">
                                                     </div>
@@ -677,12 +779,12 @@
                                 </div>
                             </div>
                             <div class="top-table__top-list">
-                                <div class="top-table__top-item">
+                                <div class="top-table__top-item open-list">
                                     <div class="top-table__top-item-name">
                                         Top 10 win amount
                                     </div>
                                 </div>
-                                <div class="top-table__bottom">
+                                <div class="top-table__bottom" style="display: block;">
                                     <div class="top-table__bottom-item">
                                         <div class="top-table__bottom-item-head">
                                             <div class="top-table__username-head">
@@ -700,6 +802,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    <img src="img/gold-icon.png" alt="img">
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/1.png" alt="user">
                                                 </div>
@@ -719,6 +824,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    <img src="img/silver-icon.png" alt="img">
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/2.png" alt="user">
                                                 </div>
@@ -738,6 +846,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    <img src="img/bronze-icon.png" alt="img">
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/3.png" alt="user">
                                                 </div>
@@ -757,6 +868,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    4
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/4.png" alt="user">
                                                 </div>
@@ -776,6 +890,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    5
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/5.png" alt="user">
                                                 </div>
@@ -795,6 +912,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    6
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/6.png" alt="user">
                                                 </div>
@@ -814,6 +934,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    7
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/7.png" alt="user">
                                                 </div>
@@ -833,6 +956,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    8
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/8.png" alt="user">
                                                 </div>
@@ -852,6 +978,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    9
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/9.png" alt="user">
                                                 </div>
@@ -871,6 +1000,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    10
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/10.png" alt="user">
                                                 </div>
@@ -890,6 +1022,9 @@
                                         </div>
                                         <div class="top-table__bottom-item-content">
                                             <div class="top-table__username">
+                                                <div class="top-table__username-number">
+                                                    11
+                                                </div>
                                                 <div class="top-table__username-img">
                                                     <img src="img/avatars/11.png" alt="user">
                                                 </div>
@@ -914,6 +1049,7 @@
                     </div>
                     <div class="rules p-lr">
                         <div class="rules__inner">
+                            <div class="rules__bg-title bg-title">LUCKY 33 Rules:</div>
                             <div class="rules__head">
                                 <div class="rules__title big-title">
                                     LUCKY 33 game Rules:
@@ -1001,24 +1137,30 @@
             <div class="footer">
                 <div class="footer__inner">
                     <div class="footer__top">
-                        <a class="footer__logo">
-                            <img src="img/flogo.png" alt="logo">
+                        <a href="" class="footer__logo">
+                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="img/flogo.png" alt="logo">
                         </a>
                         <div class="footer__list">
-                            <a href="#"class="footer__item">
-                                <img src="img/footer-img01.png" alt="img">
-                            </a>
-                            <a href="#"class="footer__item">
-                                <img src="img/footer-img02.png" alt="img">
-                            </a>
-                            <a href="#"class="footer__item">
-                                <img src="img/footer-img03.png" alt="img">
-                            </a>
-                            <a href="#"class="footer__item">
-                                <img src="img/footer-img04.png" alt="img">
+                            <a href="#" class="footer__item">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/footer-img01.png" alt="img">
                             </a>
                             <a href="#" class="footer__item">
-                                <img src="img/footer-img05.png" alt="img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/footer-img02.png" alt="img">
+                            </a>
+                            <a href="#" class="footer__item">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/footer-img03.png" alt="img">
+                            </a>
+                            <a href="#" class="footer__item">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/footer-img04.png" alt="img">
+                            </a>
+                            <a href="#" class="footer__item">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="img/footer-img05.png" alt="img">
                             </a>
                         </div>
                     </div>
@@ -1030,8 +1172,10 @@
         </footer>
     </div>
 
+    <script src="js/parallax.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

@@ -56,10 +56,11 @@ a {
 
 body {
     font-family: Montserrat-Regular, sans-serif;
-    background: url("../img/bg-line.jpg");
+    /*background: url("../img/bg-line.jpg");*/
     background-repeat: repeat-x;
     background-size: contain;
     background-position: center;
+    background: linear-gradient(to bottom, #ee6205 0%, #ee8c13 50%, #ee2805);
 }
 .body__inner {
     overflow: hidden;
@@ -137,6 +138,9 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 .header__logo-light-wrap {
     position: absolute;
@@ -202,14 +206,30 @@ header {
     z-index: 2;
     display: flex;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+.header__logo-item svg{
+    width: 210px;
+    position: absolute;
+    top: 5px;
+    margin: 0 auto;
+}
+.header__logo-item-luc {
+    max-width: 345px;
+    margin-top: 50px;
+}
+.header__logo-item-luc img{
+    width: 100%;
 }
 .header__lang {
     position: absolute;
     top: 0;
     right: 30px;
     margin-top: 58px;
-    z-index: 3;
+    z-index: 10;
+    padding: 5px;
 }
 .header__lang-link {
     color: white;
@@ -224,7 +244,7 @@ header {
 .header__lang-link--active:after {
     content: '^';
     position: absolute;
-    top: 6px;
+    top: 9px;
     right: 0;
     color: white;
     line-height: 0;
@@ -238,6 +258,8 @@ header {
 }
 .header__lang-link img{
     margin-right: 5px;
+    max-width: 20px;
+    width: 100%;
 }
 
 .header__lang-popup {
@@ -245,6 +267,8 @@ header {
     top: 100%;
     left: 0;
     display: none;
+    padding: 5px;
+    background: #a13c1961;
 }
 .header__lang-popup-link:after {
     content: none;
@@ -330,6 +354,7 @@ header {
     position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 .game__item-bet {
     font-size: 48px;
@@ -346,13 +371,14 @@ header {
 }
 .game__item-img {
     max-width: 380px;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     display: flex;
     width: 100%;
 }
-.game__item-img  img{
+.game__item-img img{
     width: 100%;
+    object-fit: contain;
 }
 .game__item-bottom {
     display: flex;
@@ -716,6 +742,10 @@ footer {
     left: 0;
     top: -70px;
     display: flex;
+    transition: 0.3s;
+}
+.footer__logo:hover {
+    transform: scale(0.9);
 }
 .footer__list {
     display: flex;
@@ -723,6 +753,10 @@ footer {
 }
 .footer__item {
     margin: 0 60px;
+    transition: 0.3s;
+}
+.footer__item:hover {
+    transform: scale(0.9);
 }
 .footer__bottom {
     color: white;
@@ -867,6 +901,9 @@ footer {
 }
 #coin8 img{
     width: 100%;
+}
+.footer__logo img {
+    width: 270px;
 }
 
 
@@ -1084,6 +1121,15 @@ footer {
         max-width: 290px;
         width: 100%;
     }
+    .header__logo-item img {
+        max-width: 240px;
+    }
+    .header__logo-item svg {
+        width: 170px;
+    }
+    .header__logo-item-luc {
+        margin-top: 40px;
+    }
     .btn {
         width: 200px;
         height: 60px;
@@ -1143,6 +1189,7 @@ footer {
     }
     .game__item {
         margin: 25px 25px 50px 25px;
+        border-radius: 50px;
     }
     .top-table__bottom-item-head > div {
         font-size: 20px;
@@ -1310,11 +1357,11 @@ footer {
         margin: 10px 0;
     }
     .footer__list {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .footer__item {
-        margin: 10px 0;
+        margin: 10px 20px;
     }
     .footer__bottom {
         font-size: 12px;
@@ -1344,16 +1391,36 @@ footer {
         margin-bottom: 30px;
     }
     .game__item-center {
-        height: 160px;
+        /*height: 160px;*/
+    }
+    .header__lang {
+        right: 10px;
     }
 }
 @media (max-width: 480px) {
     .header__logo-roulette-wrap {
-        max-width: 300px;
-        top: -90px;
+        max-width: 270px;
+        width: 100%;
+        top: -85px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .header__logo-roulette-wrap img {
+        max-width: 270px;
+        width: 100%;
     }
     .header__logo-item img {
         max-width: 190px;
+    }
+    .header__logo-item svg {
+        width: 110px;
+        display: block;
+
+        left: calc(50% - 55px);
+    }
+    .header__logo-item-luc {
+        margin-top: 25px;
     }
     .header__logo-light-wrap {
         top: -150px;
@@ -1361,9 +1428,9 @@ footer {
     #coin1 div {
         max-width: 115px;
     }
-    .last-winners__left, .access__right {
-        max-width: 100%;
-    }
+    /*.last-winners__left, .access__right {*/
+        /*max-width: 100%;*/
+    /*}*/
     .top-table__top-item-name {
         font-size: 14px;
     }
@@ -1381,4 +1448,8 @@ footer {
         top: calc(50% - 5px);
         right: -15px;
     }
+    /*.game__item-img img {*/
+        /*width: 80%;*/
+        /*margin: 0 auto;*/
+    /*}*/
 }

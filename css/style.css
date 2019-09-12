@@ -120,7 +120,7 @@ header {
     position: relative;
 }
 .header__top-bg {
-    background: linear-gradient(to bottom, #ee6406 0%, #ee6406 10%, transparent);
+    /*background: linear-gradient(to bottom, #ee6406 0%, #ee6406 10%, transparent);*/
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -128,6 +128,15 @@ header {
     height: 100%;
     top: 0;
     left: 0;
+}
+.header__top-bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10vh 18vh #ee6406;
 }
 .header__inner {
     max-width: 1700px;
@@ -906,6 +915,13 @@ footer {
     width: 270px;
 }
 
+.top-table__bottom-item-btn {
+    display: none;
+}
+.showMore--toggle {
+    display: none;
+}
+
 
 /*MEDIA*/
 
@@ -1241,9 +1257,9 @@ footer {
     .top-table__username-img img {
         width: 80%;
     }
-    .top-table__bottom-item {
-        overflow-x: scroll;
-    }
+    /*.top-table__bottom-item {*/
+        /*overflow-x: scroll;*/
+    /*}*/
     .top-table__username-head, .top-table__username {
         min-width: 300px;
         border-bottom: 1px solid white;
@@ -1303,9 +1319,37 @@ footer {
     .header__logo-light-wrap {
         top: -520px;
     }
+    .top-table__username-head, .top-table__username {
+        min-width: 260px;
+    }
+    .top-table__winning-head, .top-table__winning, .top-table__win-head, .top-table__win, .top-table__winning-head, .top-table__winning, .top-table__win-head, .top-table__win {
+        min-width: 140px;
+    }
+    .top-table__win-amount-now-head, .top-table__win-amount-now {
+        min-width: 220px;
+    }
+    .top-table__bottom-item-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .top-table__bottom-item-btn .btn{
+        height: 50px;
+        border-radius: 10px;
+        font-size: 12px;
+        box-shadow: 0 0 9px -5px black;
+        text-transform: uppercase;
+    }
+    .top-table__bottom-item .top-table__bottom-item-content:nth-of-type(n+5) {
+        display: none;
+    }
 }
 
 @media (max-width: 770px) {
+    /*.top-table__bottom-item {*/
+        /*overflow-x: scroll;*/
+    /*}*/
     .bg-title {
         display: none;
     }
@@ -1396,6 +1440,73 @@ footer {
     .header__lang {
         right: 10px;
     }
+
+    .top-table__bottom-item-head {
+        display: none;
+    }
+
+    .top-table__bottom-item-content {
+        flex-direction: column;
+        box-sizing: border-box;
+        height: auto;
+        margin-bottom: 10px;
+        box-shadow: 0 0 4px -3px black;
+    }
+    .top-table__win-amount-now {
+        border-bottom: 2px solid white;
+    }
+    .top-table__bottom-item-content > div {
+        max-width: 100%;
+        width: 100%;
+        height: 50px;
+        justify-content: flex-end;
+        display: flex;
+        padding: 0 15px;
+        box-sizing: border-box;
+        border: 0;
+        align-items: center;
+    }
+    .top-table__bottom-item-content > div:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        left: 15px;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .top-table__bottom-item-content > div:first-child, .top-table__bottom-item-head > div:first-child {
+        padding-left: 0;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+    .top-table__bottom-item-content div {
+        font-size: 12px;
+        position: relative;
+    }
+    .top-table__username-number {
+        margin-right: 0;
+    }
+    .top-table__username-name {
+        margin-right: 10px;
+    }
+    .top-table__winning,
+    .top-table__win-amount-now {
+        background: #ee610e;
+    }
+    .top-table__top-item.open-list {
+        border-bottom: 1px solid white;
+    }
+    .top-table__bottom-item {
+        padding-top: 10px;
+    }
+    .top-table__username-number {
+        width: 25px;
+    }
 }
 @media (max-width: 480px) {
     .header__logo-roulette-wrap {
@@ -1452,4 +1563,8 @@ footer {
         /*width: 80%;*/
         /*margin: 0 auto;*/
     /*}*/
+
+    .project-item {
+        height: 480px;
+    }
 }

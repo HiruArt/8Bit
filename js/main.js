@@ -38,6 +38,14 @@ $(document).ready(function () {
         var parallax8 = new Parallax(coin8);
     }
 
+
+    $('.showMore').click(function(e){
+        var btn = e.target;
+        $(btn).toggleClass('showMore--toggle');
+        var parent = e.target.closest('.top-table__bottom-item');
+        $(parent).find('.top-table__bottom-item-content:nth-child(n+5)').slideToggle();
+    });
+
     var bLazy = new Blazy();
 });
 
